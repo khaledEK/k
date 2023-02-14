@@ -11,9 +11,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
-        
+
     </head >
-   
+    
     
     
     <style>
@@ -28,36 +28,15 @@
         margin-top: 12%; margin-right: 12%; float: right
     }
 
-    .bt1_1920{
+    .bt_1920{
     
-        font-size: 630%;  background-image: url(p1.png);
+        font-size: 630%;
     }
 
-    .bt1_1366{
+    .bt_1366{
 
-        font-size: 490%;  background-image: url(p1.png);    
+        font-size: 490%;   
     }
-
-    .bt2_1920{
-
-        margin-top: 7%; font-size: 630%; background-image: url(a.png);
-    }
-
-    .bt2_1366{
-
-        margin-top: 7%; font-size: 490%; background-image: url(a.png);
-    }
-
-    .bt3_1920{
-
-        margin-top: 7%; font-size: 630%; background-image: url(m.png);
-    }
-
-    .bt3_1366{
-
-        margin-top: 7%; font-size: 490%; background-image: url(m.png);         
-    }
-
  
     button{
 
@@ -77,24 +56,24 @@
         
         <section id = "btns"  class = "btns_1920">
  
-        <button  onmouseover="select()" onmouseout="deselect()" id="bt1" onclick="window.open('https://khaledek.github.io/g/', '_blank');" class = "bt1_1920"> llGalleryll </button>
+        <button  onmouseover="select()" onmouseout="deselect()" id="bt1" onclick="window.open('https://khaledek.github.io/g/', '_blank');" class = "bt_1920" style = "background-image: url(p1.png)"> llGalleryll </button>
            
             <br>
             
-        <button  onmouseover="select2()" onmouseout="deselect2()" id="bt2" onclick="window.open('https://khaledek.github.io/pt', '_blank');" class = "bt2_1920"> llGalleryll </button>
+        <button  onmouseover="select2()" onmouseout="deselect2()" id="bt2" onclick="window.open('https://khaledek.github.io/pt', '_blank');" class = "bt_1920" style = "background-image: url(a.png); margin-top: 7%"> llGalleryll </button>
            
             <br>
 
-        <button  onmouseover="select3()" onmouseout="deselect3()" id="bt3" onclick="" class = "bt3_1920"> llGalleryll </button>
+        <button  onmouseover="select3()" onmouseout="deselect3()" id="bt3" onclick="" class = "bt_1920" style = "background-image: url(m.png); margin-top: 7%"> llGalleryll </button>
             
         </section>        
         
+
+
         
         <script>
             
-            
-            
-            
+        
                        
           function select() 
           {           
@@ -108,8 +87,7 @@
           }  
           
           
-          
-          
+
         
           function select2() 
           {           
@@ -121,8 +99,7 @@
                document.getElementById("bt2").style.backgroundSize = "90%";          
           }  
           
-                   
-          
+         
                  
          
           function select3() 
@@ -136,8 +113,9 @@
           }  
           
                  
+
           
-        window.setInterval(adjust_size, 100);  
+         window.setInterval(adjust_size, 100);  
           
         function adjust_size() {  
 
@@ -146,17 +124,17 @@
          if (w > 1700) {
           
             document.getElementById("btns").className = "btns_1920";
-            document.getElementById("bt1").className = "bt1_1920";
-            document.getElementById("bt2").className = "bt2_1920";
-            document.getElementById("bt3").className = "bt3_1920";
+            document.getElementById("bt1").className = "bt_1920";
+            document.getElementById("bt2").className = "bt_1920";
+            document.getElementById("bt3").className = "bt_1920";
              
          } else if (w > 0 && w < 1400 ) 
          {
             
             document.getElementById("btns").className = "btns_1366";
-            document.getElementById("bt1").className = "bt1_1366";
-            document.getElementById("bt2").className = "bt2_1366";
-            document.getElementById("bt3").className = "bt3_1366";
+            document.getElementById("bt1").className = "bt_1366";
+            document.getElementById("bt2").className = "bt_1366";
+            document.getElementById("bt3").className = "bt_1366";
 
          }
 
@@ -164,9 +142,7 @@
 
         </script>
         
-        
-        
-        
+          
         
     </body>
     
